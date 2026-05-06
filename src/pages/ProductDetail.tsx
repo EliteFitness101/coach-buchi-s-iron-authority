@@ -50,7 +50,7 @@ export default function ProductDetail() {
           <Button variant="outline" className="w-full border-gold mb-8">Buy with Installments (4 payments)</Button>
 
           <div className="grid grid-cols-3 gap-3 text-xs">
-            {[[Truck,"Free Lagos delivery"],[ShieldCheck,"5-yr warranty"],[CreditCard,"Pay in 4"]].map(([Icon,l],i) => (
+            {([[Truck,"Free Lagos delivery"],[ShieldCheck,"5-yr warranty"],[CreditCard,"Pay in 4"]] as const).map(([Icon,l],i) => (
               <div key={i} className="glass p-3 text-center">
                 <Icon className="w-5 h-5 text-primary mx-auto mb-1" />
                 <div className="text-muted-foreground">{l}</div>
