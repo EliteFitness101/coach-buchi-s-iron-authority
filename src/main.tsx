@@ -1,10 +1,13 @@
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import App from "./App";
 import "./index.css";
 
-// 🚀 SOVEREIGN FUNNEL OS INIT
-import { initSovereignOS } from "@/lib/sovereignFunnelOS";
-
-initSovereignOS();
+/**
+ * Sovereign OS Boot Layer
+ * (lightweight initialization only)
+ */
+if (typeof window !== "undefined") {
+  console.log("ResoFit OS initialized");
+}
 
 createRoot(document.getElementById("root")!).render(<App />);
