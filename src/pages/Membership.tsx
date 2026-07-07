@@ -5,7 +5,7 @@ import { ngn } from "@/data/products";
 
 const tiers = [
   { name: "Starter", price: 9500, period: "/mo", desc: "Begin the discipline.",
-    features: ["AI workout protocols","Naija meal plan library","Progress tracking","Community access"] },
+    features: ["ChatB2K™ workout protocols","NaijaFit™ meal plan library","Progress tracking","Community access"] },
   { name: "Elite", price: 24500, period: "/mo", featured: true, desc: "The standard choice.",
     features: ["Everything in Starter","Personalized weekly plans","Video workouts (HD)","Priority WhatsApp support","Monthly check-in call"] },
   { name: "Iron Authority", price: 89000, period: "/mo", desc: "Inner circle.",

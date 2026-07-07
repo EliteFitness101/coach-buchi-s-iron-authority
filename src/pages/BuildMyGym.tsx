@@ -30,7 +30,7 @@ export default function BuildMyGym() {
   return (
     <Layout>
       <section className="section-pad container-x max-w-4xl">
-        <p className="text-primary text-xs uppercase tracking-[0.3em] mb-3">AI Gym Builder</p>
+        <p className="text-primary text-xs uppercase tracking-[0.3em] mb-3">Powered by ChatB2K™ · Gym Builder</p>
         <h1 className="font-display text-4xl md:text-5xl mb-3">Build your <span className="text-gold-gradient">Iron Sanctuary.</span></h1>
         <p className="text-muted-foreground mb-10">Answer 4 questions. We'll architect a bundle engineered for your goals, space and budget.</p>
 

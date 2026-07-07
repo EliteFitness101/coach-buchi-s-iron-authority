@@ -25,7 +25,7 @@ export default function Home() {
             Forge the body of an <span className="text-gold-gradient">Iron Authority.</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-foreground/80 max-w-2xl">
-            Nigeria's first luxury fitness ecosystem. Premium cast iron home gyms, elite coaching by Coach Buchi, AI-driven protocols and Naija meal plans — all in one disciplined platform.
+            Premium fitness equipment, personalized coaching, wellness solutions, and nationwide support — all powered by ChatB2K™.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-gradient-gold text-primary-foreground font-semibold gold-glow">
@@ -96,25 +96,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MODULES */}
+      {/* CHATB2K MODULE */}
       <section className="section-pad container-x">
-        <h2 className="font-display text-4xl md:text-5xl text-center mb-3">One platform. <span className="text-gold-gradient">Every advantage.</span></h2>
-        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">From iron to insight — the ResoFit ecosystem powers your transformation, your business, and your tribe.</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <p className="text-primary text-xs uppercase tracking-[0.3em] text-center mb-3">Powered by ChatB2K™</p>
+        <h2 className="font-display text-4xl md:text-5xl text-center mb-3">Your ecosystem. <span className="text-gold-gradient">One platform.</span></h2>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-12">Personalized coaching, nutrition, accountability, and wellness — all in one platform.</p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Dumbbell, title: "Hardware Store", desc: "Cast iron dumbbells, barbells, benches & bundles. Built in Nigeria, shipped nationwide." },
-            { icon: Flame, title: "Wellness SaaS", desc: "Personal workout protocols, Nigerian meal plans, AI recommendations and goal tracking." },
-            { icon: Zap, title: "Nownowgym App", desc: "Tracker, video workouts, water log, loyalty rewards and instant QR purchases." },
-            { icon: Trophy, title: "Affiliate Engine", desc: "Referral codes, leaderboards, gym partnerships and influencer payouts." },
-            { icon: ShieldCheck, title: "Iron Authority Tier", desc: "Private coaching, founder access, exclusive drops and 1-on-1 protocols." },
-            { icon: MapPin, title: "Multi-City Logistics", desc: "Lagos · Abuja · Port Harcourt warehouses with same-day dispatch options." },
+            { icon: ShieldCheck, title: "ChatB2K™ Fitness Assessment", desc: "Structured onboarding assessment that maps your baseline, goals and readiness." },
+            { icon: Zap, title: "ChatB2K™ Workout Planner", desc: "Personalized push / pull / legs and hybrid protocols tuned to your equipment." },
+            { icon: Flame, title: "ChatB2K™ Nigerian Meal Planner", desc: "NaijaFit™ meal plans built around jollof, akamu, pepper soup and local macros." },
+            { icon: Trophy, title: "Daily Habit Tracker", desc: "Discipline streaks, morning routines and daily execution scores." },
+            { icon: Dumbbell, title: "Water Tracker", desc: "Hydration reminders synced to your training load and climate." },
+            { icon: MapPin, title: "Progress Dashboard", desc: "Weight lifted, body composition and streaks — all in one glance." },
+            { icon: Trophy, title: "B2K Elite Coaching", desc: "1-on-1 coaching with Coach Buchi and the B2K Elite™ team." },
+            { icon: Zap, title: "Personalized Recommendations", desc: "Smart nudges on recovery, deload weeks and next-best actions." },
           ].map(m => (
             <div key={m.title} className="glass p-7 rounded-sm hover:gold-glow transition-all">
               <m.icon className="w-8 h-8 text-primary mb-4" />
-              <h3 className="font-display text-xl mb-2">{m.title}</h3>
+              <h3 className="font-display text-lg mb-2">{m.title}</h3>
               <p className="text-sm text-muted-foreground">{m.desc}</p>
             </div>
           ))}
+        </div>
+        <div className="text-center mt-10">
+          <Button asChild size="lg" className="bg-gradient-gold text-primary-foreground font-semibold gold-glow">
+            <Link to="/dashboard">Start with ChatB2K™ <ArrowRight className="ml-2 w-4 h-4" /></Link>
+          </Button>
         </div>
       </section>
 
