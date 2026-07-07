@@ -76,7 +76,8 @@ export default function Dashboard() {
               <div className="mt-4 text-xs text-muted-foreground">Macros: 180P · 250C · 70F · 2,400 kcal</div>
             </div>
             <div className="glass p-6 rounded-sm bg-gradient-gold/5 border-primary">
-              <h3 className="font-display text-xl mb-2">AI Recommendation</h3>
+              <p className="text-primary text-[10px] uppercase tracking-[0.3em] mb-1">Powered by ChatB2K™</p>
+              <h3 className="font-display text-xl mb-2">Personalized Recommendation</h3>
               <p className="text-sm text-muted-foreground mb-4">You crushed legs yesterday. Add 200ml water now and stretch hamstrings for 8 mins post-workout.</p>
               <Button size="sm" className="bg-gradient-gold text-primary-foreground">Apply</Button>
             </div>
